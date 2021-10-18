@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Embeder</title>
+	</head>
+	<body>
+		<div id="app">
+			<h1>Embeder</h1>
+			<input
+				type="text"
+				placeholder="Webhook ID..."
+				id="webhookid"
+				class="input"
+			/>
+			<input
+				type="text"
+				placeholder="Webhook Token..."
+				id="webhooktoken"
+				class="input"
+			/><br />
+			<input
+				type="text"
+				placeholder="Title..."
+				id="title"
+				class="input"
+			/><br /><br />
+			<input
+				type="text"
+				placeholder="Description..."
+				id="description"
+				class="input"
+			/>
+			<br />
+			<br />
+			<div class="fields"></div>
+			<input type="color" id="color" />
+			<br /><br />
+			<!-- <button onclick="addField()">Add field</button><br /><br /> -->
+			<button onclick="send()" class="sendbtn">Send</button>
+		</div>
+	</body>
+</html>
+<script src="index.js"></script>
+<style>
+	body {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		background-color: rgb(44, 44, 44);
+		color: white;
+	}
+	#title {
+		margin-top: 20px;
+	}
+	#color {
+		width: 235px;
+	}
+	input {
+		padding: 10px 50px 10px 10px;
+	}
+	#color {
+		padding: 0;
+	}
+	#field {
+		margin-bottom: 20px;
+	}
+	button {
+		display: inline-block;
+		margin-bottom: 0;
+		font-weight: 400;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
+		cursor: pointer;
+		background-image: none;
+		border: 1px solid transparent;
+		padding: 6px 12px;
+		font-size: 14px;
+		line-height: 1.42857143;
+		border-radius: 4px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		color: #fff;
+		background-color: #5cb85c;
+		border-color: #4cae4c;
+	}
+
+	.sendbtn {
+		color: #fff;
+		background-color: #337ab7;
+		border-color: #2e6da4;
+	}
+</style>

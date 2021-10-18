@@ -1,0 +1,26 @@
+{
+  "name": "embeder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon .",
+    "build-win": "pkg package.json --target node16-win-x64",
+    "build-lin": "pkg package.json --target node16-linux-x64"
+  },
+  "bin": "index.js",
+  "pkg": {
+    "assets": [
+      "public/*"
+    ],
+    "output": "dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord-webhook-node": "^1.1.8",
+    "express": "^4.17.1"
+  }
+}
